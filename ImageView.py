@@ -9,6 +9,7 @@ class ImageView:
 
     def __init__(self, image=0):
         self.setImage(image)
+        print "Initied ImageView"
 
     def setTitle(self, title):
         self.__title = title

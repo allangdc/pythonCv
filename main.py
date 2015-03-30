@@ -1,11 +1,14 @@
 __author__ = 'guest-yyDj9e'
 
-import ImageView as iv
+#import ImageView as iv
+import PlateDetection as pd
 import cv2
 
 def main():
     FILE = "/tmp/guest-yyDj9e/Pictures/car01.jpg"
-    img = iv.ImageView(FILE)
+    img = pd.PlateDetection()
+    img.setImage(FILE)
+    img.Segmentation()
     img.Show()
     print "FIM"
 
